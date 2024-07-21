@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Password Generator | mindblogger786</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="input-box">
+            <input type="text" disabled id="passBox">
+            <span class="material-icons" id="copyIcon">
+                content_copy
+            </span>
+        </div>
+        <input type="range" min="1" max="18" value="8" id="passRange">
+        <div class="row">
+            <p>Password Length :</p>
+            <span id="rangeValue">8</span>
+        </div>
+        <div class="row">
+            <label for="lowercase">Include Lowercase Letters (a - z)</label>
+            <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="row">
+            <label for="uppercase">Include Uppercase Letters (a - z)</label>
+            <input type="checkbox" id="uppercase">
+        </div>
+        <div class="row">
+            <label for="numbers">Include Numbers (0 - 9)</label>
+            <input type="checkbox" id="numbers">
+        </div>
+        <div class="row">
+            <label for="symbols">Include Symbols (@,#,$,&)</label>
+            <input type="checkbox" id="symbols">
+        </div>
+
+        <button type="button" id="genBtn">Generate Password</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
